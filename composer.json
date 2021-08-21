@@ -1,0 +1,28 @@
+{
+  "name": "longhinsamuele/yii2-grid",
+  "description": "new Bootstrap 4 GridView ad GridViews",
+  "type": "yii2-extension",
+  "version": "1",
+  "keywords": [
+    "yii2",
+    "extension",
+    "btn",
+    "button"
+  ],
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Samuele Longhin",
+      "email": "longhin.samuele@outlook.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "~2.0.0",
+    "yiisoft/yii2-bootstrap4": ">=2.0.10"
+  },
+  "autoload": {
+    "psr-4": {
+      "samuelelonghin\\gridviews\\": ""
+    }
+  }
+}
