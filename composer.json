@@ -2,7 +2,7 @@
   "name": "longhinsamuele/yii2-btn",
   "description": "new Bootstrap 4 GridView ad GridViews",
   "type": "yii2-extension",
-  "version": "1",
+  "version": "1.0.2",
   "keywords": [
     "yii2",
     "extension",
