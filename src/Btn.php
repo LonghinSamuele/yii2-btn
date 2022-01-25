@@ -121,31 +121,33 @@ class Btn extends Widget
      * @return string[]
      */
     public function getUrl()
-    {
-        if (!$this->url) {
-            if (!$this->action) {
-                $this->action = $this->type;
-            }
+	{
+		if (!$this->url) {
+			if (!$this->action) {
+				$this->action = $this->type;
+			}
 
-            if (!$this->controller) {
-                if ($this->model)
-                    $this->url = '/' . $this->model::getController() . '/';
-            } else
-                $this->url = '/' . $this->controller . '/';
+			if (!$this->controller) {
+				if ($this->model)
+					$this->url = '/' . $this->model::getController() . '/';
+			} else
+				$this->url = '/' . $this->controller . '/';
 
-            if ($this->action) {
+			if ($this->action) {
 //                $this->url .= '/';
-                $this->url .= $this->action;
-            }
-        }
-        if (is_array($this->url)) $this->url = Url::to($this->url);
-        $array = [$this->url, $this->pk => $this->model[$this->pk]];
-        if ($this->params) {
-            $array = array_merge($array, $this->params);
-        }
-        return $array;
-    }
+				$this->url .= $this->action;
+			}
+		}
+		if (is_array($this->url)) $this->url = Url::to($this->url);
 
+		$array = [$this->url];
+		if ($this->model && $this->model->hasProperty($this->pk))
+			$array[$this->pk] = $this->model[$this->pk];
+		if ($this->params) {
+			$array = array_merge($array, $this->params);
+		}
+		return $array;
+	}
     /**
      * @return string
      */
