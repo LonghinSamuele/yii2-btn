@@ -1,8 +1,8 @@
 {
   "name": "samuelelonghin/yii2-btn",
-  "description": "new Bootstrap 4 GridView ad GridViews",
+  "description": "new Bootstrap 5 Btn",
   "type": "yii2-extension",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "keywords": [
     "yii2",
     "extension",
@@ -18,7 +18,7 @@
   ],
   "require": {
     "yiisoft/yii2": "~2.0.0",
-    "yiisoft/yii2-bootstrap4": ">=2.0.10"
+    "yiisoft/yii2-bootstrap5": ">=2.0.10"
   },
   "autoload": {
     "psr-4": {

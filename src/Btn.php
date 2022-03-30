@@ -3,10 +3,9 @@
 namespace samuelelonghin\btn;
 
 use Yii;
-use yii\bootstrap4\Html;
-use yii\bootstrap4\Widget;
+use yii\base\Widget;
+use yii\bootstrap5\Html;
 use yii\helpers\Url;
-
 
 class Btn extends Widget
 {
