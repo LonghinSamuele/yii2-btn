@@ -79,7 +79,7 @@ class Btn extends Widget
     public $type = 'custom';
     public $controller = false;
     public $text = true;
-    public $icon = true;
+    public $icon = false;
     public $content;
     public $options;
     public $pk = 'id';
